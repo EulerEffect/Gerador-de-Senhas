@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <style>
+        /* Adicione seu CSS aqui */
+        .hide {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="gerador.css">
+</head>
+
+<body>
+    <div>
+        <img id="logo" src="./imgCadeado/cadeado.png" alt="Cadeado">
+    </div>
+    <h1>Password Generator</h1>
+    <main class="container-input">
+        <span class="Tamanho">Quantidade de <span id="valor"></span> Caracteres</span>
+        <input id="slider" class="slider" type="range" min="10" max="25" value="15">
+        <button id="button" class="button-cta">Gerar</button>
+    </main>
+    <div id="container-password" class="container-password hide">
+        <main class="title">Your Password Has Been Generated</main>
+        <main id="Password" class="Password"></main>
+        <span class="toolship">Click on Password to Copy</span>
+    </div>
+    <script src="gerador.js"></script>
+</body>
+
+</html>
